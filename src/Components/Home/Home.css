@@ -1,0 +1,9 @@
+.home{
+    width: 90%;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    box-sizing: border-box;
+    height: 700px;
+    margin-top: 40px
+}

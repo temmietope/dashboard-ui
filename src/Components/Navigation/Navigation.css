@@ -1,0 +1,73 @@
+.nav-bar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.788);
+    box-sizing: border-box;
+    padding: 10px;
+}
+.nav-bar nav {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 15% 55% 30%;
+    text-align: center;
+    box-sizing: border-box;
+}
+.nav-bar nav .brand-name {
+    font-weight: bolder;
+    font-stretch: wider;
+    padding: 10px;
+}
+.nav-bar .search-input {
+    display: grid;
+    grid-template-columns: 90% 10%;
+}
+.nav-bar .search-input input {
+    background-color: rgba(128, 128, 128, 0.089);
+    color: rgba(83, 83, 83, 0.753);
+    padding: 10px;
+    border: 0;
+    margin: 0
+}
+.nav-bar .search-input span{
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.418);
+    color: rgb(83, 83, 83);
+    box-sizing: border-box;
+}
+.nav-bar .info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-bar .info .set-alert{
+    color: rgb(83, 83, 83)    
+}
+.nav-bar .info .set-alert i{
+    margin-right: 10px
+}
+.nav-bar .info .admin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-bar .info .admin i{
+    border: 1px solid rgba(128, 128, 128, 0.473);
+    border-radius: 50%;
+    padding: 6px;
+    margin-left: 20px;
+    color: rgba(128, 128, 128, 0.473)
+}
+.nav-bar .info .admin .admin-name{
+    margin-left: 20px;
+    color: rgb(83, 83, 83)
+
+}
+.nav-bar img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 10px
+}

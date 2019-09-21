@@ -1,0 +1,45 @@
+.side-bar {
+    width: 100%;
+    border: 1px solid black;
+    display: grid;
+    grid-template-rows: 10% 80% 10%;
+    box-sizing: border-box;
+}
+.wrapper .welcome {
+    border-bottom: 0.5px solid rgba(71, 69, 69, 0.322);
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.wrapper .welcome img {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.wrapper .welcome span {
+    font-size: 10px;
+    color: rgba(83, 83, 83, 0.753);
+}
+.wrapper .welcome p {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    color: rgb(51, 50, 50);
+    font-weight: bold;
+}
+.side-bar .list li {
+    list-style: none;
+    color: rgb(51, 50, 50);
+    font-size: 16px;
+    padding: 15px;
+    font-weight: bold;
+}
+.side-bar .list li i {
+    color: rgba(128, 128, 128, 0.795);
+    margin-right: 18px
+}
+.side-bar .logout {
+    text-align: center;
+    border: 1px solid black
+}
