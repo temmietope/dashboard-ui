@@ -14,7 +14,6 @@ const App = () => {
       const response = await fetch("https://api.github.com/search/users?q=location%3Anigeria&per_page=7");
       const json = await response.json();
       const data = await json.items;
-      console.log(data)
       return data
     }
     fetchEmployees().then(res => {
