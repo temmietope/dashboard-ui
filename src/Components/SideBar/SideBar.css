@@ -18,11 +18,11 @@
     margin-right: 10px;
 }
 .wrapper .welcome span {
-    font-size: 10px;
+    font-size: 8px;
     color: rgba(83, 83, 83, 0.753);
 }
 .wrapper .welcome p {
-    font-size: 16px;
+    font-size: 13px;
     padding: 0;
     margin: 0;
     color: rgb(51, 50, 50);
@@ -38,13 +38,13 @@
 .side-bar .list li {
     list-style: none;
     color: rgb(51, 50, 50);
-    font-size: 16px;
-    padding: 15px 50px;
+    font-size: 13px;
+    padding: 15px 30px;
     font-weight: bold;
 }
 .side-bar .list li i {
     color: rgba(128, 128, 128, 0.795);
-    margin-right: 18px
+    margin-right: 15px
 }
 .side-bar .list li:hover {
     color: rgba(63, 75, 180, 0.849);
@@ -57,5 +57,86 @@
 }
 .side-bar .logout i {
     color: rgba(128, 128, 128, 0.795);
-    margin-right: 18px
+    margin-right: 13px
+}
+
+@media screen and (max-width: 768px){
+    .wrapper .welcome img {
+        width: 25px;
+        height: 25px;
+        margin-right: 7px;
+    }
+    .wrapper .welcome span {
+        font-size: 6px;
+    }
+    .wrapper .welcome p {
+        font-size: 9px;
+    }
+    .side-bar .list li {
+        font-size: 8px;
+        padding: 9px 15px;
+    }
+    .side-bar .list li i {
+        margin-right: 8px
+    }
+    .side-bar .logout i {
+        margin-right: 8px;
+    }    
+    .side-bar .logout {
+        font-size: 8px;        
+    }
+}
+
+@media screen and (max-width: 640px){
+    .wrapper .welcome img {
+        width: 23px;
+        height: 23px;
+        margin-right: 6px;
+    }
+    .wrapper .welcome span {
+        font-size: 5px;
+    }
+    .wrapper .welcome p {
+        font-size: 8px;
+    }
+    .side-bar .list li {
+        font-size: 7px;
+        padding: 8px 13px;
+    }
+    .side-bar .list li i {
+        margin-right: 7px
+    }
+    .side-bar .logout i {
+        margin-right: 7px;
+    }    
+    .side-bar .logout {
+        font-size: 7px;        
+    }
+}
+
+@media screen and (max-width: 480px){
+    .wrapper .welcome img {
+        width: 12px;
+        height: 12px;
+        margin-right: 3px;
+    }
+    .wrapper .welcome span {
+        font-size: 3px;
+    }
+    .wrapper .welcome p {
+        font-size: 4px;
+    }
+    .side-bar .list li {
+        font-size: 4px;
+        padding: 4px 8px;
+    }
+    .side-bar .list li i {
+        margin-right: 4px
+    }
+    .side-bar .logout i {
+        margin-right: 4px;
+    }    
+    .side-bar .logout {
+        font-size: 4px;        
+    }
 }
