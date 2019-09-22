@@ -110,11 +110,11 @@
 .notification .highlights .more {
     margin-left: 10px;
     font-size: 13px
-    /* padding: 7px */
 }
 .notification .invitation button{
     background-color: inherit;
     border: 1px solid rgba(230, 224, 224, 0.404);
+    border-radius: 2px;
     color: rgba(230, 224, 224, 0.836);
     padding: 7px 15px;
     margin: 0 30px
@@ -122,6 +122,7 @@
 .notification .join button{
     background-color: rgba(230, 224, 224, 0.822);
     border: none;
+    border-radius: 2px;
     color: rgba(97, 96, 96, 0.911);
     padding: 7px 15px;
     margin: 0 30px
@@ -137,9 +138,9 @@
     justify-content: space-between;
     padding: 20px;
     box-sizing: border-box;
-    margin-top: 10px;
+    margin-top: 12px;
     border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.747)
+    background-color: rgba(255, 255, 255, 0.856)
 }
 .messages-summary p {
     padding: 0;
@@ -168,13 +169,41 @@
     font-size: 8px;
     color: rgba(95, 92, 92, 0.514)
 }
+.messages-list {
+    margin-top: 12px;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.856)    
+}
 .employee {
     display: grid;
-    grid-template-columns: 7% 12% 15% 60% 6% ;
+    grid-template-columns: 7% 7% 16% 64% 6% ;
     font-size: 0.7em;
     padding: 20px 25px;
+    box-sizing: border-box
 }
 .employee img {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%
+}
+.employee .sender {
+    font-weight: bold;
+    font-size: 15px
+}
+.employee .message-details {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-sizing: border-box  
+}
+.employee .category {
+    color: rgba(39, 38, 38, 0.938);
+    padding: 5px;
+    margin-right: 10px;
+    background-color: rgba(128, 128, 128, 0.377)
+}
+.employee .ellipsis {
+    padding: 30px;
+    box-sizing: border-box;
+    color: rgba(128, 128, 128, 0.479)
 }

@@ -1,9 +1,9 @@
 .side-bar {
     width: 100%;
-    border: 1px solid black;
     display: grid;
     grid-template-rows: 10% 80% 10%;
     box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.623);
 }
 .wrapper .welcome {
     border-bottom: 0.5px solid rgba(71, 69, 69, 0.322);
@@ -39,7 +39,13 @@
     color: rgba(128, 128, 128, 0.795);
     margin-right: 18px
 }
+.side-bar .list .highlighted {
+    
+}
 .side-bar .logout {
     text-align: center;
-    border: 1px solid black
+    color: rgb(51, 50, 50);
+}
+.side-bar .logout i {
+    color: rgba(128, 128, 128, 0.795);
 }
