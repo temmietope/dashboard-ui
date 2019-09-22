@@ -46,6 +46,11 @@
     color: rgba(128, 128, 128, 0.795);
     margin-right: 15px
 }
+.side-bar .list .active {
+    color: rgba(63, 75, 180, 0.849);
+    background-color: rgba(63, 75, 180, 0.199);
+    border-left: 2px solid rgba(63, 75, 180, 0.849)
+}
 .side-bar .list li:hover {
     color: rgba(63, 75, 180, 0.849);
     background-color: rgba(63, 75, 180, 0.199);
@@ -79,9 +84,15 @@
     .side-bar .list li i {
         margin-right: 8px
     }
+    .side-bar .list .active {
+        border-left: 1.5px solid rgba(63, 75, 180, 0.849)    
+    }
     .side-bar .logout i {
         margin-right: 8px;
     }    
+    .side-bar .list li:hover {
+        border-left: 1.5px solid rgba(63, 75, 180, 0.849)
+    }
     .side-bar .logout {
         font-size: 8px;        
     }

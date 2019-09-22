@@ -16,7 +16,7 @@ const SideBar = ({ employees }) => {
                     <li><span><i className="fas fa-address-card" />Meeting</span></li>
                     <li><span><i className="fab fa-affiliatetheme" />Customers</span></li>
                     <li><span><i className="fas fa-otter" />Ticket</span></li>
-                    <li><span><i className="fab fa-atlassian highlighted" />Message</span></li>
+                    <li className="active"><span><i className="fab fa-atlassian" />Message</span></li>
                     <li><span><i className="fas fa-hat-wizard" />Profile</span></li>
                 </ul>
             </section>
