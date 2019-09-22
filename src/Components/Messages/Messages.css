@@ -2,7 +2,7 @@
     margin-left: 30px;
     padding-top: 10px;
     display: grid;
-    grid-template-rows: 10% 10% 10% 70%
+    grid-template-rows: 7% 11% 12% 70%
 }
 .messages-navigation {
     display: flex;
@@ -11,11 +11,12 @@
 }
 .messages-navigation .header {
     margin-right: auto;
-    font-size: 25px;
+    font-size: 20px;
 }
 .messages-navigation .pages {
     margin-right: 20px;
     color: rgb(128, 128, 128);
+    font-size: 15px;
 }
 .messages-navigation .pages i {
     margin: 0 15px;
@@ -32,14 +33,14 @@
     font-size: 12px
 }
 .messages-navigation .unread button {
-    border: 1px solid rgb(73, 72, 72);
+    border: 1px solid rgba(73, 72, 72, 0.603);
     padding: 10px 25px;
     color: rgb(73, 72, 72);
     font-size: 12px;
     background-color: white;
 }
 .messages-navigation .important button {
-    border: 1px solid rgb(73, 72, 72);
+    border: 1px solid rgb(73, 72, 72, 0.603);
     padding: 10px 25px;
     color: rgb(73, 72, 72);
     font-size: 12px;
@@ -48,49 +49,58 @@
 .notification {
     display: flex;
     align-items: center;
-    background-image: linear-gradient(to bottom right, rgba(255, 72, 0, 0.733) , rgba(245, 169, 6, 0.801));
+    background-image: linear-gradient(to bottom right, rgba(255, 38, 0, 0.733) , rgba(245, 169, 6, 0.801));
     padding: 10px;
     box-sizing: border-box;
     width: 100%;
+    justify-content: space-between
 }
 .notification .group-call {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: center;
-    align-items: center
+    align-items: center;
 }
 .notification .group-call p {
-    padding: 3px;
+    padding: 2px;
     margin: 0;
     color: rgba(230, 224, 224, 0.836);
 }
 .notification .group-call .header{
-    font-size: 15px;
+    font-size: 10px;
     font-weight: bolder;
 }
 .notification .group-call .email {
-    font-size: 12px;
+    font-size: 8px;
     font-weight: bold;
 }
 .notification .group-call .time {
-    font-size: 8px
+    font-size: 6px
 }
 .notification .group-call img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    border: 1px solid rgba(245, 121, 6, 0.63);
     margin-right: 10px
 }
 .notification .highlights {
     display: flex;
-    margin: 0 25px
+    justify-content: center;
+    align-items: center;
+    margin: 0 8px
 }
 .notification .highlights p {
-    padding: 7px;
+    padding: 5px;
     margin: 0;
     color: rgba(230, 224, 224, 0.836);
+    font-size: 10px
 }
 .notification .highlights .a, .k, .d, .v{
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center
 }
 .notification .highlights .letters{
     display: flex;
@@ -108,37 +118,38 @@
     border: 2px solid rgba(230, 224, 224, 0.219)
 }
 .notification .highlights .more {
-    margin-left: 10px;
-    font-size: 13px
+    margin-left: 7px;
+    font-size: 8px
 }
-.notification .invitation button{
+.notification .invitation button {
     background-color: inherit;
     border: 1px solid rgba(230, 224, 224, 0.404);
     border-radius: 2px;
     color: rgba(230, 224, 224, 0.836);
-    padding: 7px 15px;
-    margin: 0 30px
+    padding: 5px 12px;
+    margin: 0 10px;
+    font-size: 8px
 }
-.notification .join button{
+.notification .join button {
     background-color: rgba(230, 224, 224, 0.822);
     border: none;
     border-radius: 2px;
     color: rgba(97, 96, 96, 0.911);
-    padding: 7px 15px;
-    margin: 0 30px
+    padding: 5px 12px;
+    margin: 0 10px
 }
-.notification .join button i{
+.notification .join button i {
     color: rgba(128, 128, 128, 0.548);
-    margin-right: 10px
+    margin-right: 7px
 }
 .messages-summary {
     display: flex;
-    border: 1px solid rgba(95, 92, 92, 0.514);
+    border: 0.7px solid rgba(95, 92, 92, 0.514);
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 12px;
     box-sizing: border-box;
-    margin-top: 12px;
+    margin-top: 10px;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.856)
 }
@@ -150,7 +161,8 @@
     color: rgba(63, 75, 180, 0.849);
     padding: 16px;
     border-radius: 50px;
-    background-color: rgba(128, 128, 128, 0.13)
+    background-color: rgba(128, 128, 128, 0.13);
+    margin-right: 8px
 }
 .messages-summary section {
     display: flex;
@@ -170,12 +182,17 @@
     color: rgba(95, 92, 92, 0.514)
 }
 .messages-list {
-    margin-top: 12px;
+    margin-top: 10px;
     border-radius: 3px;
 }
 .employee {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.employee .wrapper {
     display: grid;
-    grid-template-columns: 7% 7% 16% 64% 6% ;
+    grid-template-columns: 7% 7% 20% 60% 6%;
     font-size: 0.7em;
     padding: 20px 25px;
     box-sizing: border-box;
@@ -185,29 +202,436 @@
     margin: 0 -13px;
     box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.336)
 }
-.employee img {
+.employee .wrapper img {
     width: 30px;
     height: 30px;
     border-radius: 50%
 }
-.employee .sender {
+.employee .wrapper .sender {
     font-weight: bold;
-    font-size: 15px
+    font-size: 13px
 }
-.employee .message-details {
+.employee .wrapper .message-details {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     box-sizing: border-box  
 }
-.employee .category {
+.employee .wrapper .category {
     color: rgba(39, 38, 38, 0.938);
     padding: 5px;
-    margin-right: 10px;
+    margin-right: 7px;
     background-color: rgba(128, 128, 128, 0.377)
 }
-.employee .ellipsis {
+.employee .wrapper .ellipsis {
     padding: 30px;
     box-sizing: border-box;
     color: rgba(128, 128, 128, 0.479)
+}
+
+@media screen and (max-width: 768px){
+    .messages {
+        margin-left: 12px;
+        padding-top: 7px;
+    }
+    .messages-navigation .header {
+        font-size: 13px;
+    }
+    .messages-navigation .pages {
+        margin-right: 10px;
+        font-size: 10px;
+    }
+    .messages-navigation .pages i {
+        margin: 0 8px;
+    }
+    .messages-navigation .all {
+        margin-right: 12px;
+    }
+    .messages-navigation .all button{
+        padding: 5px 12px;
+        font-size: 8px
+    }
+    .messages-navigation .unread button {
+        padding: 5px 12px;
+        font-size: 8px;
+    }
+    .messages-navigation .important button {
+        padding: 5px 12px;
+        font-size: 8px;
+    }
+    .notification {
+        padding: 6px;
+    }
+    .notification .group-call p {
+        padding: 1px;
+    }
+    .notification .group-call .header{
+        font-size: 8px;
+    }
+    .notification .group-call .email {
+        font-size: 6px;
+    }
+    .notification .group-call .time {
+        font-size: 5px
+    }
+    .notification .group-call img {
+        width: 40px;
+        height: 40px;
+        margin-right: 7px
+    }
+    .notification .highlights {
+        margin: 0 4px
+    }
+    .notification .highlights p {
+        padding: 3px;
+        font-size: 7px
+    }
+    .notification .highlights .a {
+        border: 1.5px solid rgba(230, 224, 224, 0.836)
+    }
+    .notification .highlights .k {
+        border: 1.5px solid rgba(230, 224, 224, 0.692);
+    }
+    .notification .highlights .d {
+        border: 1.5px solid rgba(230, 224, 224, 0.404)
+    }
+    .notification .highlights .v {
+        border: 1.5px solid rgba(230, 224, 224, 0.219)
+    }
+    .notification .highlights .more {
+        margin-left: 4px;
+        font-size: 6px
+    }
+    .notification .invitation button {
+        padding: 4px 8px;
+        margin: 0 7px;
+        font-size: 8px
+    }
+    .notification .join button {
+        padding: 4px 8px;
+        margin: 0 7px;
+        font-size: 8px
+    }
+    .notification .join button i {
+        margin-right: 5px
+    }
+    .messages-summary {
+        padding: 8px;
+        margin-top: 7px;
+        border-radius: 4px;
+    }
+    .messages-summary i {
+        padding: 12px;
+        margin-right: 6px;
+        font-size: 10px
+    }
+    .messages-summary section .header {
+        font-size: 9px;
+    }
+    .messages-summary section .numbers {
+        font-size: 13px;
+    }
+    .messages-summary section .month {
+        font-size: 6px;
+    }
+    .messages-list {
+        margin-top: 7px;
+        border-radius: 2px;
+    }
+    .employee .wrapper {
+        font-size: 0.5em;
+        padding: 12px 15px;
+    }
+    .employee:hover {
+        margin: 0 -7px;
+        box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.336)
+    }
+    .employee .wrapper input {
+        width: 9px
+    }
+    .employee .wrapper img {
+        width: 20px;
+        height: 20px;
+    }
+    .employee .wrapper .sender {
+        font-size: 9px
+    }
+    .employee .wrapper .category {
+        padding: 3px;
+        margin-right: 5px;
+    }
+    .employee .wrapper .ellipsis {
+        padding: 18px;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .messages {
+        margin-left: 10px;
+        padding-top: 5px;
+    }
+    .messages-navigation .header {
+        font-size: 10px;
+    }
+    .messages-navigation .pages {
+        margin-right: 8px;
+        font-size: 7px;
+    }
+    .messages-navigation .pages i {
+        margin: 0 6px;
+    }
+    .messages-navigation .all {
+        margin-right: 9px;
+    }
+    .messages-navigation .all button{
+        padding: 4px 10px;
+        font-size: 6px
+    }
+    .messages-navigation .unread button {
+        padding: 4px 10px;
+        font-size: 6px;
+    }
+    .messages-navigation .important button {
+        padding: 4px 10px;
+        font-size: 6px;
+    }
+    .notification {
+        padding: 5px;
+    }
+    .notification .group-call p {
+        padding: 0.8px;
+    }
+    .notification .group-call .header{
+        font-size: 6px;
+    }
+    .notification .group-call .email {
+        font-size: 4px;
+    }
+    .notification .group-call .time {
+        font-size: 3px
+    }
+    .notification .group-call img {
+        width: 30px;
+        height: 30px;
+        margin-right: 5px
+    }
+    .notification .highlights {
+        margin: 0 4px
+    }
+    .notification .highlights p {
+        padding: 2px;
+        font-size: 5px
+    }
+    .notification .highlights .a {
+        border: 1.5px solid rgba(230, 224, 224, 0.836)
+    }
+    .notification .highlights .k {
+        border: 1.5px solid rgba(230, 224, 224, 0.692);
+    }
+    .notification .highlights .d {
+        border: 1.5px solid rgba(230, 224, 224, 0.404)
+    }
+    .notification .highlights .v {
+        border: 1.5px solid rgba(230, 224, 224, 0.219)
+    }
+    .notification .highlights .more {
+        margin-left: 3px;
+        font-size: 4px
+    }
+    .notification .invitation button {
+        padding: 3px 6px;
+        margin: 0 5px;
+        font-size: 6px
+    }
+    .notification .join button {
+        padding: 3px 6px;
+        margin: 0 5px;
+        font-size: 6px
+    }
+    .notification .join button i {
+        margin-right: 3px
+    }
+    .messages-summary {
+        padding: 6px;
+        margin-top: 5px;
+        border-radius: 3px;
+    }
+    .messages-summary i {
+        padding: 9px;
+        margin-right: 5px
+    }
+    .messages-summary section .header {
+        font-size: 7px;
+    }
+    .messages-summary section .numbers {
+        font-size: 10px;
+    }
+    .messages-summary section .month {
+        font-size: 4px;
+    }
+    .messages-list {
+        margin-top: 5px;
+        border-radius: 1.5px;
+    }
+    .employee .wrapper {
+        font-size: 0.4em;
+        padding: 10px 13px;
+    }
+    .employee:hover{
+        margin: 0 -6px;
+        box-shadow: 0 4px 2.5px -2.5px rgba(0, 0, 0, 0.336)
+    }
+    .employee .wrapper img {
+        width: 16px;
+        height: 16px;
+    }
+    .employee .wrapper .sender {
+        font-size: 7px
+    }
+    .employee .wrapper .category {
+        padding: 2px;
+        margin-right: 4px;
+    }
+    .employee .wrapper .ellipsis {
+        padding: 12px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .messages {
+        margin-left: 7px;
+        padding-top: 4px;
+    }
+    .messages-navigation .header {
+        font-size: 7px;
+    }
+    .messages-navigation .pages {
+        margin-right: 4px;
+        font-size: 3px;
+    }
+    .messages-navigation .pages i {
+        margin: 0 4px;
+    }
+    .messages-navigation .all {
+        margin-right: 7px;
+    }
+    .messages-navigation .all button{
+        padding: 3px 6px;
+        font-size: 4px
+    }
+    .messages-navigation .unread button {
+        padding: 3px 6px;
+        font-size: 4px;
+    }
+    .messages-navigation .important button {
+        padding: 3px 6px;
+        font-size: 4px;
+    }
+    .notification {
+        padding: 3px;
+        margin-top: 3px
+    }
+    .notification .group-call p {
+        padding: 0.5px;
+    }
+    .notification .group-call .header{
+        font-size: 4px;
+    }
+    .notification .group-call .email {
+        font-size: 3px;
+    }
+    .notification .group-call .time {
+        font-size: 2px
+    }
+    .notification .group-call img {
+        width: 20px;
+        height: 20px;
+        margin-right: 4px
+    }
+    .notification .highlights {
+        margin: 0 3px
+    }
+    .notification .highlights p {
+        padding: 2px;
+        font-size: 3px
+    }
+    .notification .highlights .a {
+        border: 1px solid rgba(230, 224, 224, 0.836)
+    }
+    .notification .highlights .k {
+        border: 1px solid rgba(230, 224, 224, 0.692);
+    }
+    .notification .highlights .d {
+        border: 1px solid rgba(230, 224, 224, 0.404)
+    }
+    .notification .highlights .v {
+        border: 1px solid rgba(230, 224, 224, 0.219)
+    }
+    .notification .highlights .more {
+        margin-left: 2px;
+        font-size: 3px
+    }
+    .notification .invitation button {
+        padding: 2px 4px;
+        margin: 0 3px;
+        font-size: 4px
+    }
+    .notification .join button {
+        padding: 2px 4px;
+        margin: 0 3px;
+        font-size: 4px
+    }
+    .notification .join button i {
+        margin-right: 3px
+    }
+    .messages-summary {
+        padding: 4px;
+        margin-top: 3px;
+        border-radius: 2px;
+    }
+    .messages-summary i {
+        padding: 4px;
+        margin-right: 3px;
+        font-size: 6px
+    }
+    .messages-summary section .header {
+        font-size: 5px;
+    }
+    .messages-summary section .numbers {
+        font-size: 7px;
+    }
+    .messages-summary section .month {
+        font-size: 3px;
+    }
+    .messages-list {
+        margin-top: 3px;
+        border-radius: 1px;
+    }
+    .employee .wrapper {
+        font-size: 5px;
+        padding: 6px 7px;
+    }
+    .employee .wrapper input[type=checkbox]{
+        width: 7px;
+        font-size: 5px;
+        color: red
+    }
+    .employee:hover{
+        margin: 0 -4px;
+        box-shadow: 0 3px 2px -2px rgba(0, 0, 0, 0.336)
+    }
+    .employee .wrapper img {
+        width: 10px;
+        height: 10px;
+    }
+    .employee .wrapper .sender {
+        font-size: 4px
+    }
+    .employee .wrapper .category {
+        padding: 2px;
+        margin-right: 3px;
+    }
+    .employee .wrapper .ellipsis {
+        padding: 7px;
+    }
 }
