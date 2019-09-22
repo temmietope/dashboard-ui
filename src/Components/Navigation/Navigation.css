@@ -1,4 +1,4 @@
-.nav-bar{
+.nav-bar {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -31,43 +31,163 @@
     border: 0;
     margin: 0
 }
-.nav-bar .search-input span{
+.nav-bar .search-input span {
     padding: 10px;
     background-color: rgba(128, 128, 128, 0.418);
     color: rgb(83, 83, 83);
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center
 }
 .nav-bar .info {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-size: 14px;
+    margin-left: 10px
 }
-.nav-bar .info .set-alert{
-    color: rgb(83, 83, 83)    
+.nav-bar .info .set-alert {
+    color: rgb(83, 83, 83);
+    margin-left: 5px  
 }
-.nav-bar .info .set-alert i{
-    margin-right: 10px
+.nav-bar .info .set-alert i {
+    margin-right: 12px
 }
 .nav-bar .info .admin {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.nav-bar .info .admin i{
+.nav-bar .info .admin i {
     border: 1px solid rgba(128, 128, 128, 0.473);
     border-radius: 50%;
-    padding: 6px;
-    margin-left: 20px;
+    padding: 5px;
+    margin-left: 12px;
     color: rgba(128, 128, 128, 0.473)
 }
-.nav-bar .info .admin .admin-name{
-    margin-left: 20px;
-    color: rgb(83, 83, 83)
-
+.nav-bar .info .admin .admin-name {
+    margin-left: 8px;
+    margin-right: 10px;
+    color: rgb(83, 83, 83);
 }
-.nav-bar img{
+.nav-bar img {
     width: 30px;
     height: 30px;
     border-radius: 50%;
     margin-left: 10px
+}
+
+@media screen and (max-width: 768px){
+    .nav-bar {
+        padding: 5px;
+    }
+    .nav-bar nav .brand-name {
+        padding: 8px;
+        font-size: 13px
+    }
+    .nav-bar .search-input input {
+        padding: 6px;
+        font-size: 6px
+    }
+    .nav-bar .search-input span {
+        padding: 6px;
+        font-size: 6px
+    }
+    .nav-bar .info {
+        font-size: 10px;
+        margin-left: 5px
+    }
+    .nav-bar .info .set-alert i {
+        margin-right: 8px
+    }
+    .nav-bar .info .admin i {
+        padding: 4px;
+        margin-left: 8px;
+    }
+    .nav-bar .info .admin .admin-name {
+        margin-left: 6px;
+        margin-right: 7px;
+    }
+    .nav-bar img {
+        width: 20px;
+        height: 20px;
+        margin-left: 7px
+    }
+}
+
+@media screen and (max-width: 640px){
+    .nav-bar {
+        padding: 4px;
+    }
+    .nav-bar nav .brand-name {
+        padding: 6px;
+        font-size: 10px
+    }
+    .nav-bar .search-input input {
+        padding: 5px;
+    }
+    .nav-bar .search-input span {
+        padding: 5px;
+    }
+    .nav-bar .info {
+        font-size: 8px;
+        margin-left: 3px
+    }
+    .nav-bar .info .set-alert i {
+        margin-right: 6px
+    }
+    .nav-bar .info .admin i {
+        padding: 3px;
+        margin-left: 6px;
+    }
+    .nav-bar .info .admin .admin-name {
+        margin-left: 5px;
+        margin-right: 6px;
+    }
+    .nav-bar img {
+        width: 18px;
+        height: 18px;
+        margin-left: 6px
+    }
+}
+
+@media screen and (max-width: 480px){
+    .nav-bar {
+        padding: 3px;
+        height: 25px;
+    }
+    .nav-bar nav .brand-name {
+        padding: 4px;
+        font-size: 5px;
+        margin-right: 5px
+    }
+    .nav-bar .search-input input {
+        padding: 4px;
+        font-size: 3px
+    }
+    .nav-bar .search-input span {
+        padding: 4px;
+        font-size: 3px
+    }
+    .nav-bar .info {
+        font-size: 3px;
+        margin-left: 3px
+    }
+    .nav-bar .info .set-alert i {
+        margin-right: 4px
+    }
+    .nav-bar .info .admin i {
+        padding: 2px;
+        margin-left: 4px;
+    }
+    .nav-bar .info .admin .admin-name {
+        margin-left: 2px;
+        margin-right: 4px;
+    }
+    .nav-bar img {
+        width: 12px;
+        height: 12px;
+        margin-left: 4px
+    }
 }
