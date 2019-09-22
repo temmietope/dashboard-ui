@@ -6,8 +6,10 @@ import { category, message_info } from "./utils/constants"
 
 
 const App = () => {
+  //state
   const [employees, setEmployees] = useState([])
   const [isLoading, setIsLoading] = useState(false)
+  
   useEffect(() => {
     async function fetchEmployees() {
       setIsLoading(true)
@@ -43,7 +45,6 @@ const App = () => {
   }
   return (
     <>
-      {/* {employees.length && renderPage()} */}
       {isLoading ? 
         renderLoading() : 
         employees.length && renderPage()}
