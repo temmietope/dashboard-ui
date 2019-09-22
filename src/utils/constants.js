@@ -1,5 +1,5 @@
 export const category = [
-    "User Testing", "Design", "Developmet", "Meeting with Jack", "Interview", "Slack", "Gmail team"
+    "User Testing", "Design", "Development", "Meeting with Jack", "Interview", "Slack", "Gmail team"
 ]
 
 export const message_info = [
