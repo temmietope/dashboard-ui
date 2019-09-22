@@ -36,9 +36,18 @@ const App = () => {
       </div>
     )
   }
+
+  const renderLoading = () => {
+    return (
+      <div className="loading"> <img src="./images/loading.svg" alt="loading" /></div>
+    )
+  }
   return (
     <>
-      {employees.length && renderPage()}
+      {/* {employees.length && renderPage()} */}
+      {isLoading ? 
+        renderLoading() : 
+        employees.length && renderPage()}
     </>
   );
 }

@@ -6,7 +6,7 @@ const SideBar = ({ employees }) => {
         <div className="side-bar">
 
             <section className="welcome">
-                <img src={employees[1].avatar_url} alt="img"/>
+                <img src={employees[1].avatar_url} alt="img" />
                 <span><p>Welcome Essie</p> Super Admin </span>
             </section>
             <section className="list">

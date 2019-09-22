@@ -28,19 +28,28 @@
     color: rgb(51, 50, 50);
     font-weight: bold;
 }
+.side-bar .list {
+    width: 100%;
+    padding: 0
+}
+.side-bar .list ul {
+    padding: 0
+}
 .side-bar .list li {
     list-style: none;
     color: rgb(51, 50, 50);
     font-size: 16px;
-    padding: 15px;
+    padding: 15px 50px;
     font-weight: bold;
 }
 .side-bar .list li i {
     color: rgba(128, 128, 128, 0.795);
     margin-right: 18px
 }
-.side-bar .list .highlighted {
-    
+.side-bar .list li:hover {
+    color: rgba(63, 75, 180, 0.849);
+    background-color: rgba(63, 75, 180, 0.199);
+    border-left: 2px solid rgba(63, 75, 180, 0.849)
 }
 .side-bar .logout {
     text-align: center;
@@ -48,4 +57,5 @@
 }
 .side-bar .logout i {
     color: rgba(128, 128, 128, 0.795);
+    margin-right: 18px
 }
